@@ -1,0 +1,15 @@
+﻿@page
+@model LoginDemo.Pages.BingMap.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+@section Scripts {
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ahd4ddfcMZPnU4Rgd02fEy3W7Rvvue3RTiZxV-ESkJgXzz3wB_vsy65eTveZ2pmZ' async defer></script>
+    <script type="text/javascript">
+        function GetMap() {
+            var map = new Microsoft.Maps.Map('#bingMap');
+        }
+    </script>
+}
+<h2>Bing Map Demo</h2>
+<div id="bingMap"></div>
